@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <title>Photo BootStrap</title>
+</head>
+<body>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://w7.pngwing.com/pngs/349/300/png-transparent-logo-computer-icons-instagram-logo-miscellaneous-text-logo-thumbnail.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Instagram
+          </a>
+          <!-- Navbar orientado a derecha-->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarDropdown">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item active">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#createPost">
+                  Create a new post
+                </button>
+              </li>
+            </ul>
+            
+
+            <!-- Modal -->
+            <div class="modal fade" id="createPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fw-bold">Caption:</p>
+                    <textarea class="col-12" placeholder="Add the caption of your post here"></textarea>
+                    <button type="button" class="btn btn-light">
+                      <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <button type="button" class="btn btn-light">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dropdown opciones-->
+            <div class="dropdown justify-content-end">
+              <button class="btn btn-secondary dropdown-toggle m-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+
+      <!-- Contenedores grid -->
+      <div class="container mt-5">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <button id="btnGrid1" class="btn btn-primary active">
+                  <i class="fa-solid fa-table-cells"></i>
+                </button>
+                <button id="btnGrid2" class="btn btn-primary">
+                  <i class="fa-solid fa-square"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Primer contenedor grid-->
+        <div id="grid1" class="grid-container-fluid">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Labrador_Retriever_%281210559%29.jpg" class="img-fluid h-100 object-fit-cover" alt="Imagen 1" />
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg" class="img-fluid h-100 object-fit-cover" alt="Imagen 2" />  
+                </div>
+                <div class="col-md-4">
+                    <img src="https://images.ctfassets.net/denf86kkcx7r/4IPlg4Qazd4sFRuCUHIJ1T/f6c71da7eec727babcd554d843a528b8/gatocomuneuropeo-97?fm=webp&w=612" class="img-fluid h-100 object-fit-cover" alt="Imagen 3" />
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="https://thumb.pccomponentes.com/w-530-530/articles/1085/10857444/1215-sony-playstation-5-pro.jpg" class="img-fluid h-100 object-fit-cover" alt="Imagen 1" />
+                </div>
+                <div class="col-md-4">
+                    <img src="https://statics.memondo.com/p/s1/ccs/2024/07/CC_2810338_3c6bc2cfa88f44e684d1db0ff37334ca_meme_otros_wolverine_recreo_el_meme.jpg?cb=4242362" class="img-fluid h-100 object-fit-cover" alt="Imagen 2" />  
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRfLnFB3VWAnrH0lShB_6Uh8dICyqZeloeZg&s" class="img-fluid h-100 object-fit-cover" alt="Imagen 3" />
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="https://www.panenka.org/wp-content/uploads/2021/02/fbl-por-liga-belenenses-sporting-scaled-e1613561233212.jpg" class="img-fluid h-100 object-fit-cover" alt="Imagen 1" />
+                </div>
+                <div class="col-md-4">
+                    <img src="https://mysupersuit.com/cdn/shop/articles/Venom_dans_une_ville_en_apocalypse_1100x.jpg?v=1730156443" class="img-fluid h-100 object-fit-cover" alt="Imagen 2" />  
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.sklum.com/es/3615924-988x708/cama-en-borreguito-winselet.jpg" class="img-fluid h-100 object-fit-cover" alt="Imagen 3" />
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="https://jamonessierramorena.com/wp-content/uploads/2024/01/cachopo-con-jamon-iberico.jpg" class="img-fluid h-100 object-fit-cover" alt="Imagen 1" />
+                </div>
+                <div class="col-md-4">
+                    <img src="https://i.ytimg.com/vi/mKp9mRG6-5M/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBZvUnbGnXBVCkexeImdP7lKlSlIw" class="img-fluid h-100 object-fit-cover" alt="Imagen 2" />  
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.pequerecetas.com/wp-content/uploads/2018/02/cachopo-de-ternera-asturiano-receta.jpg" class="img-fluid h-100 object-fit-cover" alt="Imagen 3" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Segundo contenedor grid-->
+        <div id="grid2" class="grid-container" style="display:none;">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-6">
+                    <div class="card post-card m-2">
+                      <div class="card-header d-flex">
+                        <h3 class="d-flex justify-content-center">Mi perro loco Agonías!</h3>
+                        <label class="d-flex justify-content-end ms-auto">08/11</label>
+                      </div>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Labrador_Retriever_%281210559%29.jpg" class="card-img-top post-image" alt="post 1">
+                        <div class="card-body">
+                          <p class="fw-bold"> 345 likes</p>
+                          <p class="card-text">Esta es una foto de ejemplo que se puede publicar en Instagram.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-6">
+                <div class="card post-card m-2">
+                  <div class="card-header d-flex">
+                    <h3 class="d-flex justify-content-center">Mis vistas de Covadonga</h3>
+                    <label class="d-flex justify-content-end ms-auto">10/10</label>
+                  </div>
+                  <img src="https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg" class="card-img-top post-image" alt="post 2">
+                  <div class="card-body">
+                      <p class="fw-bold"> 532 likes</p>
+                      <p class="card-text">Esta es una foto de paisaje que se puede publicar en Instagram.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-6">
+                <div class="card post-card m-2">
+                  <div class="card-header d-flex">
+                    <h3 class="d-flex justify-content-center">Mi pequeño gato Chachito!</h3>
+                    <label class="d-flex justify-content-end ms-auto">20/09</label>
+                  </div>
+                  <img src="https://images.ctfassets.net/denf86kkcx7r/4IPlg4Qazd4sFRuCUHIJ1T/f6c71da7eec727babcd554d843a528b8/gatocomuneuropeo-97?fm=webp&w=612" class="card-img-top post-image" alt="post 3">
+                  <div class="card-body">
+                      <p class="fw-bold"> 789 likes</p>
+                      <p class="card-text">Esta es una foto de gato que siempre son muy confiables.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-6">
+                <div class="card post-card m-2">
+                  <div class="card-header d-flex">
+                    <h3 class="d-flex justify-content-center">Mi nueva consola!</h3>
+                    <label class="d-flex justify-content-end ms-auto">15/08</label>
+                  </div>
+                  <img src="https://thumb.pccomponentes.com/w-530-530/articles/1085/10857444/1215-sony-playstation-5-pro.jpg" class="card-img-top post-image" alt="post 4">
+                  <div class="card-body">
+                      <p class="fw-bold"> 934 likes</p>
+                      <p class="card-text">Esta es una foto de una consola de Sony que está arrasando en el mercado.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Your Bootstrap Scripts should always be before the </body> closing tag -->
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+crossorigin="anonymous" >
+</script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+crossorigin="anonymous">
+</script>
+<!-- AddListener de los botones que cambian los contenidos -->
+<script>
+  document.getElementById('btnGrid1').addEventListener('click', function() {
+      document.getElementById('grid1').style.display = 'block';
+      document.getElementById('grid2').style.display = 'none';
+      this.classList.add('active');
+      document.getElementById('btnGrid2').classList.remove('active');
+  });
+
+  document.getElementById('btnGrid2').addEventListener('click', function() {
+      document.getElementById('grid1').style.display = 'none';
+      document.getElementById('grid2').style.display = 'block';
+      this.classList.add('active');
+      document.getElementById('btnGrid1').classList.remove('active');
+  });
+</script>
+</body>
+</html>
